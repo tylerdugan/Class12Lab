@@ -21,7 +21,6 @@ public class SecretEncoder {
 		for(char c : message.toCharArray()){
 			sb.append((char)(c + key));
 		}
-		
 		dos.writeUTF(sb.toString());
 		dos.close();
 	}
